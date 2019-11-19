@@ -1,48 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Gustavo Pérez - Portafolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <!--Cabecera-->
     <header>
-        <!--Logo principal-->
-        <div class="logo">
-            <h1>Gustavo Pérez</h1>
-        </div>
-        <!--Menú de navegación principal-->
-        <div class="menuprincipal">
-            <a href="#">Home</a>
-            <a href="#">News</a>
-            <a href="#t">Contact</a>
-            <a href="#about">About</a>
-        </div>
+      <!--Logo principal-->
+      <div class="logo">
+        <h1>Gustavo Pérez</h1>
+      </div>
+      <!--Menú de navegación principal-->
+      <div class="menuprincipal">
+        <a href="#">Sobre mí</a>
+        <a href="#">Portafolio</a>
+        <a href="#">Mis Habilidades</a>
+        <a href="#">Contáctame</a>
+      </div>
     </header>
     <!--Cuerpo principal-->
     <main>
-        <!--Acerca de mí-->
-        <section class="aboutme">
-
-        </section>
-        <!--Portafolio-->
-        <section class="portfolio">
-
-        </section>
-        <!--Mis Habilidades-->
-        <section class="habilities">
-
-        </section>
-        <!--Contacto-->
-        <section class="contactme">
-
-        </section>
+      <!--Acerca de mí-->
+      <section class="aboutme">
+        <h2>Sobre mí</h2>
+        <div class="presentacion">
+          <figure>
+            <img src="/images/oval.png" alt="Gustavo Pérez" />
+          </figure>
+          <p>
+            Hola soy Gustavo Pérez Desarrollador Full Stack, actualmente estoy
+            trabajando en el bootcamp codiGO. Me apasiona la programacion, el
+            disenio UI y la experiencia de usuario y todo lo relacionado a
+            tecnologia, muchas gracias por visitar mi pagina. rr encontrarme mis
+            publicaciones en mis redes sociales.
+          </p>
+          <ul>
+            <li>
+              <img src="./images/entypo-social-linkedin-with-circle.png" />
+            </li>
+            <li>
+              <img src="./images/entypo-social-github-with-circle.png" />
+            </li>
+            <li>
+              <img src="./images/entypo-social-twitter-with-circle.png" />
+            </li>
+            <li>
+              <img src="./images/entypo-social-skype-with-circle.png" />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--Portafolio-->
+      <section class="portfolio">
+        <h2>Portafolio</h2>
+        <div class="proyectos">
+          <figure>
+            <img src="./images/portfolio/portafolio1.png" />
+          </figure>
+          <figure>
+            <img src="./images/portfolio/portafolio2.png" />
+          </figure>
+          <figure>
+            <img src="./images/portfolio/portafolio3.png" />
+          </figure>
+          <figure>
+            <img src="./images/portfolio/portafolio4.png" />
+          </figure>
+          <figure>
+            <img src="./images/portfolio/portafolio5.png" />
+          </figure>
+          <figure>
+            <img src="./images/portfolio/portafolio6.png" />
+          </figure>
+        </div>
+      </section>
+      <!--Mis Habilidades-->
+      <section class="habilities">
+        <h2>Mis Habilidades</h2>
+        <div class="skills">
+          <div class="tecnologia">
+            <h3>HTML 5</h3>
+            <progress value="80" max="100"></progress>
+          </div>
+          <div class="tecnologia">
+            <h3>Node JS</h3>
+            <progress value="80" max="100"></progress>
+          </div>
+          <div class="tecnologia">
+            <h3>CSS3</h3>
+            <progress value="80" max="100"></progress>
+          </div>
+          <div class="tecnologia">
+            <h3>Python</h3>
+            <progress value="80" max="100"></progress>
+          </div>
+          <div class="tecnologia">
+            <h3>RWD</h3>
+            <progress value="80" max="100"></progress>
+          </div>
+          <div class="tecnologia">
+            <h3>DJango</h3>
+            <progress value="80" max="100"></progress>
+          </div>
+          <div class="tecnologia">
+            <h3>Javascript</h3>
+            <progress value="80" max="100"></progress>
+          </div>
+          <div class="tecnologia">
+            <h3>ExpressJS</h3>
+            <progress value="80" max="100"></progress>
+          </div>
+          <div class="tecnologia">
+            <h3>Angular</h3>
+            <progress value="80" max="100"></progress>
+          </div>
+          <div class="tecnologia">
+            <h3>Firebase</h3>
+            <progress value="80" max="100"></progress>
+          </div>
+          <div class="tecnologia">
+            <h3>React</h3>
+            <progress value="80" max="100"></progress>
+          </div>
+          <div class="tecnologia">
+            <h3>MongoDB</h3>
+            <progress value="80" max="100"></progress>
+          </div>
+          <div class="tecnologia">
+            <h3>Redux</h3>
+            <progress value="80" max="100"></progress>
+          </div>
+          <div class="tecnologia">
+            <h3>SQL</h3>
+            <progress value="80" max="100"></progress>
+          </div>
+          <div class="tecnologia">
+            <h3>Socket</h3>
+            <progress value="80" max="100"></progress>
+          </div>
+        </div>
+      </section>
+      <!--Contacto-->
+      <section class="contactme">
+        <h2>Contáctame</h2>
+        <form>
+          <div class="campos">
+            <p>Nombre</p>
+            <input type="text" name="nombre" id="nombre" required>
+          </div>
+          <div class="campos">
+            <p>RR</p>
+            <input type="text" name="RR" id="RR" required>
+          </div>
+          <div class="campos">
+            <p>Número de contacto</p>
+            <input type="tel" name="telefono" id="telefono" required>
+          </div>
+          <div class="campos">
+            <p>Correo</p>
+            <input type="email" name="email" id="email" required>
+          </div>
+          <p>Déjame un mensaje</p>
+          <textarea name="descripcion" id="descripcion" required>
+                        </textarea>
+                <input type="submit" name="enviar" id="enviar"/>
+        </form>
+        <div class="datos">
+          <span>Dirección</span>
+          <p>Av: Jose Leal 548 - Lima / Peru</p>
+          <span>Teléfono</span>
+          <p>00511 - 923708059 / 00511 - 5483161</p>
+          <span>Email</span>
+          <p>contactanos@gmail.com</p>
+        </div>
+      </section>
     </main>
     <!--Pie de página-->
     <footer>
-
+      <div class="copyright">
+        <p>Todos los derechos reservados | 2019</p>
+      </div>
+      <div class="desarrollador">
+        <p>Desarrollado por codiGO</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
