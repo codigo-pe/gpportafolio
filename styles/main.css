@@ -1,0 +1,60 @@
+body {
+    width: 100%;
+    margin: auto;
+    padding: 0px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 13px;
+}
+
+/*ancho del lienzo de la web*/
+
+.lienzo{
+    max-width: 1024px;
+    margin: auto;
+}
+
+/*Cabecera del portal*/
+
+header {
+    background: black;
+    color: white;
+    height: 80px;
+    box-shadow: rgba(71, 71, 71, 0.5);
+}
+
+header h1 {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 33px;
+}
+
+header .menuprincipal {
+    display: inline-block;
+    overflow: hidden;
+    padding-left: 30%;
+}
+
+header .menuprincipal a {
+    float: right;
+    color: gray;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+}
