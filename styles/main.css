@@ -1,221 +1,227 @@
 body {
-    width: 100%;
-    margin: auto;
-    padding: 0px;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  margin: auto;
+  padding: 0px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h1 {
-    font-size: 32px;
-    font-weight: bold;
-    font-family: Helvetica;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: Helvetica;
 }
 
 h2 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #c8c8c8;
-    border-left: 4px solid #c8c8c8;
-    padding-left: 7px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #c8c8c8;
+  border-left: 4px solid #c8c8c8;
+  padding-left: 7px;
 }
 
 h3 {
-    font-size: 13px;
-    font-family: Helvetica;
-    font-weight: bold;
+  font-size: 13px;
+  font-family: Helvetica;
+  font-weight: bold;
 }
 
 p {
-    font-size: 18px;
-    line-height: 28px;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 /*ancho del lienzo de la web*/
 
 .lienzo {
-    max-width: 1024px;
-    margin: auto;
-    border: 1px solid #d5d5d5
+  max-width: 1024px;
+  margin: auto;
+  border: 1px solid #d5d5d5;
 }
 
 /*Cabecera del portal*/
 
 header {
-    background: black;
-    color: white;
-    height: 80px;
-    box-shadow: 0px 4px 10px 0px rgba(71, 71, 71, 0.5);
-    display: flex;
+  background: black;
+  color: white;
+  height: 80px;
+  box-shadow: 0px 4px 10px 0px rgba(71, 71, 71, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1024px;
+  width: 100%;
+  padding-left: 3%;
+  padding-right: 3%;
+  position: fixed;
 }
 
-header h1 {
-    margin: auto;
-    width: 40%;
-    padding-left: 3%;
+nav ul {
+  display: flex;
 }
 
-header .menuprincipal {
-    margin: auto;
-    width: 60%;
-    padding-left: 15%;
+.menuprincipal li {
+  margin-left: 20px;
 }
 
-header .menuprincipal a {
-    color: #c7c7c7;
-    text-align: center;
-    padding-left: 2%;
-    padding-right: 2%;
-    text-decoration: none;
+.menuprincipal li a {
+  font-size: 16px;
+  color: #c7c7c7;
+  text-decoration: none;
+  float: left;
 }
 
 /*Configuración general de todas las secciones incluidas en el main*/
 
+main{
+  margin-top: 80px;
+}
+
 section {
-    padding: 35px 3%;
+  padding: 35px 3%;
 }
 
 /*Acerca de mí*/
 
 .aboutme .presentacion {
-    display: flex;
-    margin-top: 26px;
+  display: flex;
+  margin-top: 26px;
 }
 
 .aboutme .presentacion figure {
-    width: 30%;
+  width: 30%;
 }
 
 .aboutme .presentacion .resena {
-    width: 70%;
+  width: 70%;
 }
 
 .aboutme .resena ul {
-    display: flex;
-    margin-top: 20px;
+  display: flex;
+  margin-top: 20px;
 }
 
 .aboutme .resena li {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 /*Portafolio*/
 
 .portfolio .proyectos {
-    margin-top: 26px;
-    display: grid;
-    grid-row: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+  margin-top: 26px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
 }
 
 .portfolio .proyectos img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    border: 10px solid #f0f0f0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 10px solid #f0f0f0;
 }
 
 /* Mis habilidades*/
 
 .habilities .skills {
-    margin-top: 26px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+  margin-top: 26px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
 }
 
 .habilities .tecnologia {
-    display: flex;
+  display: flex;
 }
 
 .habilities h3 {
-    width: 15%;
-    margin: auto;
+  width: 15%;
+  margin: auto;
 }
 
 .habilities progress {
-    width: 85%;
+  width: 85%;
 }
 
 /* Contacto*/
 
 .contactme {
-    display: flex;
+  display: flex;
 }
 
 .contactme form {
-    width: 70%;
-    display: flex;
-    flex-wrap: wrap;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .contactme h2 {
-    margin-bottom: 26px;
-    width: 100%;
+  margin-bottom: 26px;
+  width: 100%;
 }
 
 .contactme .campos {
-    width: 50%;
+  width: 50%;
 }
 
 .contactme .campos input {
-    width: 90%;
-    height: 40px;
-    border: 1px solid #d5d5d5;
+  width: 90%;
+  height: 40px;
+  border: 1px solid #d5d5d5;
 }
 
 .contactme textarea {
-    width: 95%;
-    height: 131px;
-    border: 1px solid #d5d5d5;
+  width: 95%;
+  height: 131px;
+  border: 1px solid #d5d5d5;
 }
 
 .contactme .boton-enviar {
-    margin-top: 39px;
-    height: 44px;
-    width: 160px;
-    background: #42704e;
-    border: none;
-    color: white;
-    font-size: 16px;
+  margin-top: 39px;
+  height: 44px;
+  width: 160px;
+  background: #42704e;
+  border: none;
+  color: white;
+  font-size: 16px;
 }
 
 .contactme .datos {
-    width: 30%;
-    border-left: 1px solid #d5d5d5;
-    padding-left: 19px;
+  width: 30%;
+  border-left: 1px solid #d5d5d5;
+  padding-left: 19px;
 }
 
 .contactme p {
-    font-size: 13px;
-    font-family: Helvetica;
-    margin: 6px 0px;
+  font-size: 13px;
+  font-family: Helvetica;
+  margin: 6px 0px;
 }
 
 .contactme span {
-    font-weight: bold;
-    font-size: 13px;
-    font-family: Helvetica;
+  font-weight: bold;
+  font-size: 13px;
+  font-family: Helvetica;
 }
 
 /*Footer*/
 
 footer {
-    margin-top: top 40px;
-    background: black;
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 34px;
+  margin-top: top 40px;
+  background: black;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 34px;
 }
 
 footer p {
-    color: white;
-    font-size: 11px;
+  color: white;
+  font-size: 11px;
 }
